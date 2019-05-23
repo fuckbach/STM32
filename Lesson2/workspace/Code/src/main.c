@@ -1,6 +1,15 @@
 #include "stm32f4xx.h"
- int t = 0;
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+
  
+ void delay( uint32_t time){
+	 uint32_t i ;
+	 for (i = 0;i<time;i++){
+		 
+	 }
+ }
  
 int main(void)
 {
@@ -14,24 +23,21 @@ int main(void)
 	while(1)
 		{
 				GPIOD->BSRR |= GPIO_BSRR_BS_15;
-				for (t = 0;t<500000;t++){}
+				delay(2000000);
 				GPIOD->BSRR |= GPIO_BSRR_BR_15;
-				for (t = 0;t<2000000;t++){}
-				
+				delay(2000000);
 				GPIOD->BSRR |= GPIO_BSRR_BS_14;
-				for (t = 0;t<500000;t++){}
+				delay(2000000);
 				GPIOD->BSRR |= GPIO_BSRR_BR_14;
-				for (t = 0;t<500000;t++){}	
-					
+				delay(2000000);
 				GPIOD->BSRR |= GPIO_BSRR_BS_13;
-				for (t = 0;t<500000;t++){}
+				delay(2000000);
 				GPIOD->BSRR |= GPIO_BSRR_BR_13;
-				for (t = 0;t<500000;t++){}	
-					
+				delay(2000000);	
 				GPIOD->BSRR |= GPIO_BSRR_BS_12;
-				for (t = 0;t<500000;t++){}
+				delay(2000000);
 				GPIOD->BSRR |= GPIO_BSRR_BR_12;
-				for (t = 0;t<500000;t++){}
+				delay(2000000);
 					
 	  }
 	

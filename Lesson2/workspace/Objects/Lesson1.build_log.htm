@@ -21,17 +21,22 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
 Dialog DLL:      TCM.DLL V1.36.1.0
  
 <h2>Project:</h2>
-D:\Обучение\STM32\Lesson1\workspace\Lesson1.uvprojx
-Project File Date:  04/23/2019
+D:\Обучение\STM32\Lesson2\workspace\Lesson1.uvprojx
+Project File Date:  05/22/2019
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil\ARM\ARMCC\Bin'
 Build target 'Lesson1'
-compiling main.c...
+compiling port.c...
 linking...
-Program Size: Code=1084 RO-data=424 RW-data=4 ZI-data=1636  
-FromELF: creating hex file...
-".\Objects\Lesson1.axf" - 0 Error(s), 0 Warning(s).
+.\Objects\Lesson1.axf: Error: L6218E: Undefined symbol vApplicationMallocFailedHook (referred from heap_1.o).
+.\Objects\Lesson1.axf: Error: L6218E: Undefined symbol vApplicationIdleHook (referred from tasks.o).
+.\Objects\Lesson1.axf: Error: L6218E: Undefined symbol vApplicationStackOverflowHook (referred from tasks.o).
+.\Objects\Lesson1.axf: Error: L6218E: Undefined symbol vApplicationTickHook (referred from tasks.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 4 error messages.
+".\Objects\Lesson1.axf" - 4 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -45,7 +50,8 @@ Package Vendor: Keil
   D:\Keil\Pack\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Target not created.
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
