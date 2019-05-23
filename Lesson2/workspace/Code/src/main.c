@@ -3,7 +3,42 @@
 #include "task.h"
 #include "queue.h"
 
+/*******************************************************************/
+void vApplicationIdleHook( void )
+{
+}
  
+ 
+ 
+/*******************************************************************/
+void vApplicationMallocFailedHook( void )
+{
+    for( ;; );
+}
+ 
+ 
+ 
+/*******************************************************************/
+void vApplicationStackOverflowHook( xTaskHandle pxTask, signed char *pcTaskName )
+{
+    ( void ) pcTaskName;
+    ( void ) pxTask;
+ 
+    for( ;; );
+}
+ 
+ 
+ 
+/*******************************************************************/
+void vApplicationTickHook( void )
+{
+}
+ 
+ 
+ 
+/*******************************************************************/
+
+
  void delay( uint32_t time){
 	 uint32_t i ;
 	 for (i = 0;i<time;i++){
@@ -11,7 +46,9 @@
 	 }
  }
  
-int main(void)
+
+ 
+ int main(void)
 {
 	RCC->AHB1ENR |= RCC_AHB1ENR_GPIODEN;
 	GPIOD->MODER |= GPIO_MODER_MODER15_0 | GPIO_MODER_MODER14_0 | GPIO_MODER_MODER13_0 | GPIO_MODER_MODER12_0;
