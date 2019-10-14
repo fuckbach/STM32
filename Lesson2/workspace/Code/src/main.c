@@ -4,7 +4,8 @@
 #include "queue.h"
 
 void GPIO_Init(void);
-void VTask1(void* argument);
+void VTaskLed1(void* argument);
+void VTaskLed2(void* argument);
 /*******************************************************************/
 void vApplicationIdleHook( void )
 {
@@ -38,11 +39,12 @@ void vApplicationTickHook( void )
  
  
  
-/*******************************************************************/
-
  int main(void)
 {
 	GPIO_Init();
+	xTaskCreate(VTaskLed1,"LED BLINK1", 32, NULL, 1, NULL);
+	xTaskCreate(VTaskLed2,"LED BLINK2", 32, NULL, 1, NULL);
+	vTaskStartScheduler();
 	
 	while(1)
 		{
@@ -58,19 +60,27 @@ void GPIO_Init(void){
 	GPIOD->OSPEEDR = 0;
 }
 
-void VTask1(void* argument){
+void VTaskLed1(void* argument){
 
 	while(1){
 		GPIOD->BSRR |= GPIO_BSRR_BS_15;
-		GPIOD->BSRR |= GPIO_BSRR_BR_14;
-		vTaskDelay(1000);
-			
-		GPIOD->BSRR |= GPIO_BSRR_BR_15;
-		GPIOD->BSRR |= GPIO_BSRR_BS_14;
 		vTaskDelay(1000);	
+		GPIOD->BSRR |= GPIO_BSRR_BR_15;
+		vTaskDelay(1000);	
+			
+			
 	}
 	
 }
 
+	void VTaskLed2(void* argument){
 
+	while(1){
+		GPIOD->BSRR |= GPIO_BSRR_BR_14;
+		vTaskDelay(100);	
+		GPIOD->BSRR |= GPIO_BSRR_BS_14;
+		vTaskDelay(100);
+	}
+	
+}
 
