@@ -4,6 +4,12 @@
 .\objects\timers.o: D:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\timers.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\timers.o: .\Code\inc\FreeRTOSConfig.h
+.\objects\timers.o: .\CMSIS\inc\stm32f4xx.h
+.\objects\timers.o: .\CMSIS\inc\core_cm4.h
+.\objects\timers.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\timers.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\timers.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\timers.o: .\CMSIS\inc\system_stm32f4xx.h
 .\objects\timers.o: .\FreeRTOS\inc\projdefs.h
 .\objects\timers.o: .\FreeRTOS\inc\portable.h
 .\objects\timers.o: .\FreeRTOS\inc\deprecated_definitions.h

@@ -41,6 +41,8 @@ void vApplicationTickHook( void )
  
  int main(void)
 {
+	SystemCoreClockUpdate();
+	SysTick_Config(SystemCoreClock/1000);
 	GPIO_Init();
 	xTaskCreate(VTaskLed1,"LED BLINK1", 32, NULL, 1, NULL);
 	xTaskCreate(VTaskLed2,"LED BLINK2", 32, NULL, 1, NULL);

@@ -4,6 +4,12 @@
 .\objects\stream_buffer.o: .\FreeRTOS\inc\FreeRTOS.h
 .\objects\stream_buffer.o: D:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\stream_buffer.o: .\Code\inc\FreeRTOSConfig.h
+.\objects\stream_buffer.o: .\CMSIS\inc\stm32f4xx.h
+.\objects\stream_buffer.o: .\CMSIS\inc\core_cm4.h
+.\objects\stream_buffer.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\stream_buffer.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\stream_buffer.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\stream_buffer.o: .\CMSIS\inc\system_stm32f4xx.h
 .\objects\stream_buffer.o: .\FreeRTOS\inc\projdefs.h
 .\objects\stream_buffer.o: .\FreeRTOS\inc\portable.h
 .\objects\stream_buffer.o: .\FreeRTOS\inc\deprecated_definitions.h

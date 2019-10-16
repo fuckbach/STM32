@@ -5,6 +5,12 @@
 .\objects\queue.o: D:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\queue.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\queue.o: .\Code\inc\FreeRTOSConfig.h
+.\objects\queue.o: .\CMSIS\inc\stm32f4xx.h
+.\objects\queue.o: .\CMSIS\inc\core_cm4.h
+.\objects\queue.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\queue.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\queue.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\queue.o: .\CMSIS\inc\system_stm32f4xx.h
 .\objects\queue.o: .\FreeRTOS\inc\projdefs.h
 .\objects\queue.o: .\FreeRTOS\inc\portable.h
 .\objects\queue.o: .\FreeRTOS\inc\deprecated_definitions.h

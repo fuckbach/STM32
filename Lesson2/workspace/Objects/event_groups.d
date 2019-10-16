@@ -4,6 +4,12 @@
 .\objects\event_groups.o: D:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\event_groups.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\event_groups.o: .\Code\inc\FreeRTOSConfig.h
+.\objects\event_groups.o: .\CMSIS\inc\stm32f4xx.h
+.\objects\event_groups.o: .\CMSIS\inc\core_cm4.h
+.\objects\event_groups.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\event_groups.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\event_groups.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\event_groups.o: .\CMSIS\inc\system_stm32f4xx.h
 .\objects\event_groups.o: .\FreeRTOS\inc\projdefs.h
 .\objects\event_groups.o: .\FreeRTOS\inc\portable.h
 .\objects\event_groups.o: .\FreeRTOS\inc\deprecated_definitions.h

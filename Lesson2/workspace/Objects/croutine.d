@@ -3,6 +3,12 @@
 .\objects\croutine.o: D:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\croutine.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\croutine.o: .\Code\inc\FreeRTOSConfig.h
+.\objects\croutine.o: .\CMSIS\inc\stm32f4xx.h
+.\objects\croutine.o: .\CMSIS\inc\core_cm4.h
+.\objects\croutine.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\croutine.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\croutine.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\croutine.o: .\CMSIS\inc\system_stm32f4xx.h
 .\objects\croutine.o: .\FreeRTOS\inc\projdefs.h
 .\objects\croutine.o: .\FreeRTOS\inc\portable.h
 .\objects\croutine.o: .\FreeRTOS\inc\deprecated_definitions.h

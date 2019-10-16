@@ -4,6 +4,12 @@
 .\objects\heap_1.o: D:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\heap_1.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\heap_1.o: .\Code\inc\FreeRTOSConfig.h
+.\objects\heap_1.o: .\CMSIS\inc\stm32f4xx.h
+.\objects\heap_1.o: .\CMSIS\inc\core_cm4.h
+.\objects\heap_1.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\heap_1.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\heap_1.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\heap_1.o: .\CMSIS\inc\system_stm32f4xx.h
 .\objects\heap_1.o: .\FreeRTOS\inc\projdefs.h
 .\objects\heap_1.o: .\FreeRTOS\inc\portable.h
 .\objects\heap_1.o: .\FreeRTOS\inc\deprecated_definitions.h

@@ -3,6 +3,12 @@
 .\objects\port.o: D:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\port.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\port.o: .\Code\inc\FreeRTOSConfig.h
+.\objects\port.o: .\CMSIS\inc\stm32f4xx.h
+.\objects\port.o: .\CMSIS\inc\core_cm4.h
+.\objects\port.o: .\CMSIS\inc\core_cmInstr.h
+.\objects\port.o: .\CMSIS\inc\core_cmFunc.h
+.\objects\port.o: .\CMSIS\inc\core_cmSimd.h
+.\objects\port.o: .\CMSIS\inc\system_stm32f4xx.h
 .\objects\port.o: .\FreeRTOS\inc\projdefs.h
 .\objects\port.o: .\FreeRTOS\inc\portable.h
 .\objects\port.o: .\FreeRTOS\inc\deprecated_definitions.h
@@ -10,9 +16,3 @@
 .\objects\port.o: .\FreeRTOS\inc\mpu_wrappers.h
 .\objects\port.o: .\FreeRTOS\inc\task.h
 .\objects\port.o: .\FreeRTOS\inc\list.h
-.\objects\port.o: .\CMSIS\inc\stm32f4xx.h
-.\objects\port.o: .\CMSIS\inc\core_cm4.h
-.\objects\port.o: .\CMSIS\inc\core_cmInstr.h
-.\objects\port.o: .\CMSIS\inc\core_cmFunc.h
-.\objects\port.o: .\CMSIS\inc\core_cmSimd.h
-.\objects\port.o: .\CMSIS\inc\system_stm32f4xx.h
