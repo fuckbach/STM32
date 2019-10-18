@@ -63,18 +63,22 @@ void GPIO_Init(void){
 	GPIOD->MODER |= GPIO_MODER_MODER15_0 | GPIO_MODER_MODER14_0 | GPIO_MODER_MODER13_0 | GPIO_MODER_MODER12_0;//LED
 	GPIOD->OTYPER = 0;
 	GPIOD->OSPEEDR = 0;
-	GPIOA->MODER |= GPIO_MODER_MODER0_1;//Button
-	GPIOA->PUPDR = 0;
+	GPIOA->MODER &= ~(3>>0);//Button
 	
 }
 
 void VTaskButtonUser(void* argument){
 
 	while(1){
-		GPIOD->ODR ^= GPIO_ODR_ODR_15;
-		vTaskDelay(500);	
-		GPIOD->ODR ^= GPIO_ODR_ODR_15;
-		vTaskDelay(500);	
+		if((GPIOA->IDR & GPIO_IDR_IDR_0) != 0){
+			vTaskDelay(100);	
+			if((GPIOA->IDR & GPIO_IDR_IDR_0) != 0){
+		
+			
+			GPIOD->ODR ^= GPIO_ODR_ODR_15;
+			GPIOD->ODR ^= GPIO_ODR_ODR_14;}
+		}
+		
 			
 			
 	}
