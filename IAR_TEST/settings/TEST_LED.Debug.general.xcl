@@ -1,0 +1,15 @@
+"D:\soft\IAR\arm\bin\armproc.dll" 
+
+"D:\soft\IAR\arm\bin\armstlink2.dll" 
+
+"D:\Study\STM32\IAR_TEST\Debug\Exe\TEST_LED.out" 
+
+--plugin "D:\soft\IAR\arm\bin\armbat.dll" 
+
+--device_macro "D:\soft\IAR\arm\config\debugger\ST\STM32F4xx.dmac" 
+
+--flash_loader "D:\soft\IAR\arm\config\flashloader\ST\FlashSTM32F4xxx.board" 
+
+
+
+
